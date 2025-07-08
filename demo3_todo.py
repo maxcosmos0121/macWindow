@@ -5,7 +5,8 @@ from PySide6.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton,
     QListWidget, QListWidgetItem, QLabel, QMenu
 )
-from frameless_window import FramelessWindow
+
+from MacWindow import MacWindow
 
 
 class CustomLineEdit(QLineEdit):
@@ -46,7 +47,7 @@ class CustomLineEdit(QLineEdit):
         menu.exec(event.globalPos())
 
 
-class TodoApp(FramelessWindow):
+class TodoApp(MacWindow):
     def __init__(self):
         super().__init__()
 

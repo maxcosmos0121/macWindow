@@ -4,10 +4,11 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QApplication, QVBoxLayout, QLineEdit, QPushButton, QMessageBox
 )
-from frameless_window import FramelessWindow  # 你封装的窗口类
+
+from MacWindow import MacWindow  # 你封装的窗口类
 
 
-class LoginWindow(FramelessWindow):
+class LoginWindow(MacWindow):
     def __init__(self):
         super().__init__()
 
